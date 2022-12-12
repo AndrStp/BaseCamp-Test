@@ -16,4 +16,4 @@
 The solutions proposed include on-premise one with rack collocation and other one using AWS resources
 
 My calculations:
-![Calcualtion](./Pricing_calculation.png)
+![Calcualtion](./Pricing_calculation_corrected.png)
