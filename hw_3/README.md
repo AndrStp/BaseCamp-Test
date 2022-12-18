@@ -24,4 +24,7 @@ Added script for installing all prerequisites for moodle installation (see `user
 However wasn't able to fully automate moodle installation **(:**
 
 Landing page
+
+Address: http://3.74.152.30/
+
 ![langing-page](./moodle.png)
