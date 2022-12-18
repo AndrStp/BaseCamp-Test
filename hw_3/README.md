@@ -17,3 +17,11 @@
 
 ## Acceptance Criteria:
 URL (or IP) to your working Moodle learning platform
+
+
+## Solution:
+Added script for installing all prerequisites for moodle installation (see `user-data-ubuntu.sh`)\
+However wasn't able to fully automate moodle installation **(:**
+
+Landing page
+![langing-page](./moodle.png)
