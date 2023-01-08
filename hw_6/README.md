@@ -63,14 +63,6 @@ $ terraform apply --auto-approve
 ```
 
 Eventually this will produce the following output (the IPs will differ):
-```
-Apply complete! Resources: 9 added, 0 changed, * destroyed.
-
-Outputs:
-
-aws_public_ip = "35.158.116.210"
-az_public_ip = "35.158.116.210"
-```
 
 ![tf-outputs-public-ip](./tf-outputs.png)
 
@@ -107,11 +99,3 @@ Run the following command to clean up
 ```
 terraform destroy --auto-approve
 ```
-
-On accessing web-vm external-ip
-
-![langing-page-start](./wordpress_start.png)
-
-After configuration:
-
-![langing-page-final](./wordpress_final.png)
