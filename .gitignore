@@ -1,4 +1,8 @@
 .DS_Store
 .terraform*
-global*
+*global*
 my_gcp*.json
+hw_3/user-data-amazon.sh
+*/terraform.tfstate
+*/terraform.tfstate.backup
+admin_access*
