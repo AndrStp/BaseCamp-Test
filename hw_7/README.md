@@ -32,7 +32,17 @@
 
 Once run, the project provisions Ubuntu VMs (the number of VMS can be configured) in the `AWS Cloud` along with other cloud resources (vps, subnet, routing table, etc.) required for VMs to properly function. 
 
-After resource provisiong is completed the Ansible playbook `./ansible/harden.yaml` is run localy (local-exec provisioner in `./terraform/main.tf`) to install and configure `libpam-pwquality` package to harden users authentication.
+After resource provisiong is completed the Ansible playbook `./ansible/harden.yaml` is run localy (local-exec provisioner in `./terraform/main.tf`) to install and configure `libpam-pwquality` package to harden users authentication. 
+
+The playbook enforces the following rules:
+
+>* A minimum password length of 12 chars
+>* One lowercase letter
+>* One uppercase letter
+>* One numeric char
+>* One nonalphanumeric char
+>* Three retries
+>* Disable root override
 
 On completion you are given a list of pulic ips of provisioned VMs as well as a `./ansible/hosts.ini` inventory file with a list of VM names and corresponding addresses in case you want run additional ansible playbooks.
 
