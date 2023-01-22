@@ -3,6 +3,5 @@
 *global*
 my_gcp*.json
 hw_3/user-data-amazon.sh
-*/terraform.tfstate
-*/terraform.tfstate.backup
+terraform.tfstate*
 admin_access*
