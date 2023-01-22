@@ -74,7 +74,7 @@ Also expect `./ansible/hosts.ini` file to be populated:
 
 And now you're ready to use your *hardened* VMs:
 
-![VMs-result](./result.png)
+![VMs-result](./vm-result.png)
 
 ### What can be configured?
 
