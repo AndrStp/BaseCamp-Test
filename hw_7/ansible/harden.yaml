@@ -1,0 +1,22 @@
+---
+- hosts: all
+  become: true
+
+  tasks:
+  - name: Update apt-get repo and cache
+    apt: update_cache=yes force_apt_get=yes cache_valid_time=3600
+
+  - name: Install libpam-pwquality
+    apt:
+      name: libpam-pwquality
+      state: present
+      update_cache: yes
+
+  - name: Configure pam_pwquality
+    lineinfile:
+      path: "/etc/pam.d/common-password"
+      regexp: "pam_pwquality.so"
+
+      line: "password required pam_pwquality.so minlen=12 lcredit=-1 ucredit=-1
+            dcredit=-1 ocredit=-1 retry=3 enforce_for_root"
+      state: present
