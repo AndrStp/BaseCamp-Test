@@ -1,0 +1,4 @@
+[nodes]
+%{ for name, ip in nodes ~}
+${ name }=${ ip }
+%{ endfor ~}
